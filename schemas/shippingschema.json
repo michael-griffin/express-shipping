@@ -11,7 +11,11 @@
     },
     "name" : { "type" : "string"},
     "addr" : { "type" : "string", "minLength" : 4},
-    "zip" : { "type" : "string", "minLength" : 5 }
+    "zip" : { "type" : "string",
+      "minLength" : 10,
+      "maxLength" : 10,
+      "pattern" : "^[0-9]{5}-[0-9]{4}"
+    }
   },
   "additionalProperties": false,
   "required": [
