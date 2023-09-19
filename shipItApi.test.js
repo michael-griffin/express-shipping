@@ -6,7 +6,7 @@ const {
   shipProduct, SHIPIT_SHIP_URL
 } = require("./shipItApi");
 
-
+//FIXME: include all other fields so they get data as expected
 test("shipProduct", async function () {
   fetchMock.post(`${SHIPIT_SHIP_URL}`, {
     body: {
